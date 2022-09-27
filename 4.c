@@ -1,24 +1,16 @@
-/*Write a program to print the following output using the for loop.
-1
-2 2
-3 3 3
-4 4 4 4
-5 5 5 5 5 */
+//WAP to find simple interest
 
-#include<stdio.h>
-
+#include <stdio.h>
 int main()
 {
-   int i,j,n;
-   printf("Enter the number of pattern:-  ");
-   scanf("%d",&n);
-
-   for(i=0 ; i<=n ; i++){
-    for(j=1 ; j<=i ; j++){
-        printf("%d",i);
-    }
-        printf("\n");
-   }
-
+    float p,rate,time,si;
+    printf("Enter the princple amount:-  ");
+    scanf("%f",&p);
+    printf("Enter rate of insterst:-  ");
+    scanf("%f",&rate);
+    printf("Enter time period in year:-  ");
+    scanf("%f",&time);
+    si = p*rate*time/100;
+    printf("Simple insterst is = %f",si);
     return 0;
 }

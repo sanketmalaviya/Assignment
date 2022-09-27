@@ -1,18 +1,18 @@
+//Write a program to make Simple calculator (to make addition, subtraction,multiplication, division and modulo) 
+
 #include<stdio.h>
 
 int main()
 {
-    int i=1,n,f=0,f1=1,f2=1;
-    printf("Enter the number of fibonacci value:-  ");
-    scanf("%d",&n);
-    do{
-        i++;
-         printf("%d ",f);
-         f1=f2;
-         f2=f;
-         f=f1+f2;
-    }while(i<=n);
+    int a,b;
+    printf("Ente1r the value of A ");
+    scanf("%d",&a);
+    printf("Enter the value of B ");
+    scanf("%d",&b);
+    printf("Addition of %d and %d is %d\n",a,b,a+b);
+    printf("subration of %d and %d is %d\n",a,b,a-b);
+    printf("multiplaction of %d and %d is %d\n",a,b,a*b);
+    printf("division of %d and %d is %d\n",a,b,a/b);
+    
     return 0;
 }
-
-

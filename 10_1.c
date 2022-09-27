@@ -31,8 +31,8 @@ int main()
        printf("Sunday");   
       break;
    default:
-   printf("DATA NOT FOUND!!!")
-       
+   printf("DATA NOT FOUND!!!");
+       break;
    }
 
     return 0;

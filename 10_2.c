@@ -1,3 +1,5 @@
+//2. Vowel or Consonant using switch case
+
 #include<stdio.h>
 int main(){
     char b;
@@ -10,3 +12,4 @@ int main(){
          printf("%c is not vowel character",b);
     }
     return 0;
+}
