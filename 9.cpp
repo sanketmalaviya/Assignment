@@ -9,7 +9,7 @@ class Matrix
         public:
         void accept(){
             cout<<"\n Enter Matrix Element (3 X 3) : \n";
-        for(int i=0; i<3; i++)
+        for(int i=0; i<3; i++)       
         {
                 for(int j=0; j<3; j++)
                 {
@@ -46,7 +46,7 @@ class Matrix
                 {
                         cout<<mat[i][j]<<"\t";
                 }
-                cout<<"\n";
+                cout<<"\n";q
         }
         }
 };

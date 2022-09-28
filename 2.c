@@ -5,7 +5,7 @@
 int main()
 {
     int a,b;
-    printf("Ente1r the value of A ");
+    printf("Enter 1 the value of A ");
     scanf("%d",&a);
     printf("Enter the value of B ");
     scanf("%d",&b);
