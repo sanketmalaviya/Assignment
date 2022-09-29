@@ -9,8 +9,3 @@
 -To deposited an amount 
 -To withdraw an amount after checking balance 
 -To display name and balance  */
-
-
-#include<iostream>
-using namespace std;
-
