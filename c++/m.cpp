@@ -29,6 +29,7 @@ void swap(A obj1, B obj2){
 }
 
 int main(){
+    
     A a1(10);
     B b1(20);
     swap(a1,b1);
