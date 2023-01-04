@@ -34,6 +34,7 @@ class Student: Person{
 			cout<<"Student details are: \n";
 			displayPerson();
 			cout<<"Prcentage is:  "<<per<<endl;
+			cout<<"-------------------------------------"<<endl;
 		}
 };
 class  Teacher: Person{

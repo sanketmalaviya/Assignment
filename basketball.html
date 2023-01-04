@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>Basket Ball</title>
+<link href="./index.css" rel="stylesheet"/>
+<style>
+   
+    .basket-ball {
+      background-image: url("https://cdn.lyty.dev/site-images/ball.png");
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 400px;
+      animation-fill-mode: forwards;
+      animation-name: ball;
+      animation-duration: 5s;
+    }
+    .net {
+      position: absolute;
+      left: 85%;
+      width: 150px;
+      z-index: 2;
+      top: 180px;
+      
+    }
+    .border{
+        height: 200px;
+        width: 100%;
+        background-color: gray;
+        position: relative;
+        top: 480px;        
+    }
+    .line{
+        width: 20px;
+        height:400px;
+        background-color: gray;
+        position: absolute;
+      left: 94%;
+        
+    }
+    @keyframes ball{
+       0%{
+            top: 400px;
+            left: 10px;
+       }
+       35%{
+           top:200px;
+           left: 200px;
+       }
+       70%{
+        top:400px;
+           left: 600px;
+       }
+    90%{
+        top:120px;
+        left:85%;
+    }
+    100%{
+        bottom: 400px;
+        left:85px;
+    }
+          
+    }   
+    
+
+  </style>
+</head>
+<body>
+<div class="court">
+<img alt="" class="net" src="https://cdn.lyty.dev/site-images/net.png"/>
+<div class="basket-ball-shadow"></div>
+</div>
+<div class="basket-ball"></div>
+<div class="border"></div>
+<div class="line"></div>
+</body>
+</html>

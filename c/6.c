@@ -14,7 +14,7 @@ int main()
   case 1:
 
      printf("enter the number of days:-  ");
-     scanf("%d",1&ndays);
+     scanf("%d",&ndays);
 
      year = ndays / 365;
      week = (ndays%365) / 7;
@@ -25,12 +25,12 @@ int main()
     break;
   case 2:
     
-      printf("enter the number of year");
+      printf("enter the number of year:");
       scanf("%d",&nyear);
 
       day = nyear*365;
 
-      printf("years convert into days\n ");
+      printf("years convert into days:\n ");
       printf("%d years is %d days",nyear,day);
       break;
   default:
