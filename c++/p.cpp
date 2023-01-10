@@ -18,7 +18,7 @@ int main()
 {
     int a[10] = { 10, 50, 30, 40, 20, 60, 90, 80, 100, 70 };
     int n = sizeof(a) / sizeof(a[0]);
-  
+
 
     bubbleSort<int>(a, n);
   
