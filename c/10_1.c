@@ -4,7 +4,7 @@
 int main()
 {
   int days;
-  printf("please select the number between 1 to 7");
+  printf("please select the number between 1 to 7\n");
   printf("enter the number:-  ");
   scanf("%d",&days);
    switch (days)
