@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="myjs.js"></script>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <center>
@@ -21,13 +27,15 @@
                     <table>
                         <tr>
                             <td><label >COUSTMER I'D </label></td>
-                            <td><input requred type="text" name="fname" ></td> 
+                            <td><input requred type="text" name="fname" id ="fname" onkeyup="validation()"></td> 
+                            <span id="fnamee"></span>
                         </tr>
                         <tr><td><td></td></td></tr>
                         <tr><td><td></td></td></tr>
                         <tr>
                             <td><label>PASSWORD</label></td>
-                            <td><input requred type="password" name="" id=""></td>
+                            <td><input requred type="password" name="" id="pass" onkeyup="validation()"></td>
+                            <span id="passe"></span>
                         </tr>
                         <tr><td><td></td></td></tr>
                         <tr><td><td></td></td></tr>
