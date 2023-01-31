@@ -30,4 +30,12 @@ function div() {
 
 
 
+setTimeout(() => {
+    a.innerHTML = new Date()    
+}, 1000);
+
+setInterval(() => {
+    a1.innerHTML = new Date()   
+}, 1000);
+
 
