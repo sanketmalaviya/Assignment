@@ -31,7 +31,7 @@ function div() {
 
 
 setTimeout(() => {
-    a.innerHTML = new Date()    
+    a2.innerHTML = new Date()    
 }, 1000);
 
 setInterval(() => {
