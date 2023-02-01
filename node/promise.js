@@ -23,7 +23,7 @@ square(10).then(result => {
 }).then(data => {
     console.log(data)
     return mul(data);
-}).then(mul =>{
+}).then(mul =>{     
     console.log(mul);
 }).catch (err =>{
     console.log(err);
