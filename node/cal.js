@@ -1,11 +1,11 @@
-function add() {
+ const add = ()=>{
     var a = document.getElementById("a").value
     var b = document.getElementById("b").value
     var c = Number(a) + Number(b);
     document.getElementById("c").innerHTML = c
 }
 
-function sub() {
+const sub = ()=> {
     var a = document.getElementById("a").value
     var b = document.getElementById("b").value
     var c = Number(a) - Number(b);
@@ -13,7 +13,7 @@ function sub() {
 }
 
 
-function mul() {
+const mul = ()=> {
     var a = document.getElementById("a").value
     var b = document.getElementById("b").value
     var c = Number(a) * Number(b);
@@ -21,7 +21,7 @@ function mul() {
 }
 
 
-function div() {
+const div = ()=> {
     var a = document.getElementById("a").value
     var b = document.getElementById("b").value
     var c = Number(a) / Number(b);

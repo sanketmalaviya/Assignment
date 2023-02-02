@@ -28,7 +28,6 @@ const div = (a,b) => {
 
  const call = async() =>{
 
-    try {
         const ad = await add(10,20)
         console.log(ad);
         const su = await sub(20,10)
@@ -38,8 +37,4 @@ const div = (a,b) => {
         const di = await div(10,2)
         console.log(di);
     }  
-    catch (error) {
-        console.log(error)
-    }
-} 
   call();
