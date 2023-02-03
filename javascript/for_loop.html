@@ -8,14 +8,13 @@
 </head>
 <body>
     <script>
-        var num=0;
-        while (num <= 10) {
-            document.write(num,"<br>");
-        
-            num++;
+        for (let num= 1; num <= 10 ; num++){
+            let tableOf = 9;
+            //Template literals
+            document.write(` ${tableOf} * ${num } + ${tableOf*num}`,"<br>")
         }
+    
+
     </script>
 </body>
 </html>
-        
-  
