@@ -17,12 +17,12 @@ const div = (a,b,val)=>{
 
 add(10,20,(add) => {
     console.log(add);
-        sub(20,10,(sub) => {
-            console.log(sub);
-                mul(10,10,(mul) => {
-                    console.log(mul);
-                        div(10,2,(div) => {
-                            console.log(div);
+        sub(add,(s) => {
+            console.log(s);
+                mul(s,(m) => {
+                    console.log(m);
+                        div(m,(d) => {
+                            console.log(d);
                         })
                 })
         })
