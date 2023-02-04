@@ -9,4 +9,4 @@ fs.readFile("node/file/text.txt",(err,data)=>{
     console.log(data.toString());
 })
 
-console.log("file call using async way");
+console.log("file call using async way");   
