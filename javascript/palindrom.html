@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 212;
+        var b,sum=0,temp;
+         temp=a;
+        function pali(){
+            while(a != 0){
+
+b=a%10;
+sum=sum*10+b;
+a+=10;
+}
+
+if(temp==sum){
+Document.write("This is palindrom");
+}
+else{
+Document.write("This is not palindrom");
+}
+        }
+      
+    </script>
+</body>
+</html>
