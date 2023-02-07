@@ -43,7 +43,7 @@ yargs.command({
   
 //    command: "remove",
 
-//    handler : fs.rmdir("node/node_file_Curd/data", (err, data) => {
+//    handler : fs.rmdir("node_file_Curd/data", (err, data) => {
 //       if (err) {
 //         console.log(err);
 //        return;
