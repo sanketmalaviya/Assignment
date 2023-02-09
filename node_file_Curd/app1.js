@@ -28,11 +28,11 @@ yargs.command({
 
 })
 
-
+    
 yargs.command({
     command : "view" ,
     handler: function(argv){
-       file1.viewData()
+       file1.viewData(argv)
     }
 })
 
