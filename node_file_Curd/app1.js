@@ -16,7 +16,7 @@ yargs.command({
             }
        
     },
-
+  
     handler: function(argv){
         
     const data = {
@@ -27,4 +27,13 @@ yargs.command({
     }
 
 })
+
+
+yargs.command({
+    command : "view" ,
+    handler: function(argv){
+       file1.viewData()
+    }
+})
+
 yargs.argv
