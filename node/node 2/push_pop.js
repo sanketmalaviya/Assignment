@@ -1,0 +1,10 @@
+console.log(myVal);
+console.log(myVal2);
+ a.pop();
+ console.log(a);
+ a.shift();
+ console.log(a);
+ a.push(10);
+ console.log(a);
+ a.unshift(10);
+ console.log(a);
