@@ -10,9 +10,23 @@ const createFile = (data)=>{
     })
 }
 
-const viewData = () =>{
-    const data = viewData();
-    console.log(data);
+const viewFile = () =>{
+    const data2 = viewData();
+    console.log(data2);
 }
 
-module.exports={createFile}
+const viewData = () =>{
+    try {
+        const data = fs.readFileSync("data.json","utf-8")
+            if(data){
+                return JSON.parse(data);
+            }
+            else{
+                return [1];
+            }
+    } catch (error) {
+        return [3] ;
+    }
+}
+
+module.exports={createFile,viewFile}
