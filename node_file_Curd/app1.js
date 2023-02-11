@@ -10,10 +10,15 @@ yargs.command({
     builder :  {
             name: {
                 type : String
-        },
-            email: {
+             },
+             email:{
                 type : String
             }
+            // date: {
+            //     type : Date,
+            //     default: new date()
+            // }
+            
        
     },
   
@@ -22,17 +27,18 @@ yargs.command({
     const data = {
         name:  argv.name,
         email: argv.email
+        // date:  argv.date
     }
     file1.createFile(data);
     }
 
 })
 
-
+    
 yargs.command({
-    command : "view" ,
+    command : "view" , 
     handler: function(argv){
-       file1.viewData()
+       file1.viewFile()
     }
 })
 
