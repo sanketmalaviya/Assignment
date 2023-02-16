@@ -14,10 +14,6 @@ yargs.command({
              email:{
                 type : String
             }
-            // date: {
-            //     type : Date,
-            //     default: new date()
-            // }
             
        
     },
@@ -27,7 +23,7 @@ yargs.command({
     const data = {
         name:  argv.name,
         email: argv.email
-        // date:  argv.date
+        
     }
     file1.createFile(data);
     }
