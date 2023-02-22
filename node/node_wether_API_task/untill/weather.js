@@ -16,7 +16,7 @@ const getWeather = (lat, lon) => {
             const city = result.data.name;
 
             return resolve({
-                temp, pressure, humidity, city
+                city, temp, pressure, humidity
             })
 
 
