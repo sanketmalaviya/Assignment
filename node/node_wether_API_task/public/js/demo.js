@@ -8,11 +8,8 @@ const getweather = () =>{
         pressure.innerHTML=data.pressure
         humidity.innerHTML=data.humidity
         lat.innerHTML=data.lat
-        lng.innerHTML = data.lng
+        lng.innerHTML = data.lon
     }).catch(err =>{
         console.log(err);
     })
-}
-const on=()=>{
-    alert("ok");
 }

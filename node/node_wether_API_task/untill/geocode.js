@@ -15,7 +15,6 @@ const getGeocode = (city) => {
 
             const lat = dt.lat;
             const lng = dt.lng;
-
             return resolve({ lat, lng })
 
         }).catch(err => {
