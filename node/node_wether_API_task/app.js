@@ -2,7 +2,7 @@ const express = require("express")
 const app = express();
 const weather = require("./untill/weather")
 const geocode = require("./untill/geocode")
-const port = 9001;
+const port = 9002;
 const path = require("path")
 const hbs = require("hbs")
 
@@ -32,7 +32,7 @@ app.get("/weather",(req,resp)=>{
     geocode.getGeocode(location).then(result =>{
         return weather.getWeather(result.lat, result.lng)
     }).then(data =>{
-        console.log(data);
+        resp.send(data)
     }).catch(err =>{
         console.log(err);
     })
@@ -40,5 +40,5 @@ app.get("/weather",(req,resp)=>{
 
 
 app.listen(port,()=>{
-    console.log("PORT 9001 is running");
+    console.log("PORT 9000 is running");
 })
