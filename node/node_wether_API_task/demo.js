@@ -1,4 +1,4 @@
-const { response } = require("express");
+ 
 
 var headers = new Headers();
 headers.append("X-CSCAPI-KEY", "UXF2OHQ2WjBMT1Y5Q05MQzVhNE1sT3VJSk02Y3BaNzlRNHRVMHRjZA==");
@@ -16,8 +16,10 @@ const getCountries = () =>{
     }).then((result)=>{
         var row = "";
         for(var i = 0; i < result.length; i++){
-            row = row + "<<option value=" + result[i].iso2 + ">" + result[i].name + "</option>"
+            row = row + "<option value=" +result[i].iso2+ " >" + result[i].name + "</option>"
+            console.log(result[i])
         }
+        
         country.innerHTML=row
     }).catch(err=>{
         console.log(err);
@@ -55,7 +57,7 @@ const getcities = (scode) => {
             var row = "";
             for (var i = 0; i < result.length; i++) {
 
-                row = row + "<option value=" + result[i].name + ">" + result[i].name + "</option>"
+                row = row + "<option value=" + result[i].name+ ">" + result[i].name + "</option>"
             }
             city1.innerHTML = row
         }).catch(err =>{
@@ -80,3 +82,5 @@ const getweather = (name) =>{
         console.log(err);
     })
 }
+
+
