@@ -9,14 +9,17 @@ app.get("/",(req,resp)=>{
 app.get("/main",(req,resp)=>{
     resp.sendFile(path.join(__dirname,"main.html"))
 })
-app.get("/singIn",(req,resp)=>{
-    resp.sendFile(path.join(__dirname,"singIn.html"))
+app.get("/signIn",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"signIn.html"))
 }) 
 app.get("/about",(req,resp)=>{
     resp.sendFile(path.join(__dirname,"about.html"))
 }) 
 app.get("/contact",(req,resp)=>{
     resp.sendFile(path.join(__dirname,"contact.html"))
+})
+app.get("/signinSubmit",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"signinSubmit.html"))
 })
 app.get("/*",(req,resp)=>{
     resp.sendFile(path.join(__dirname,"error.html"))

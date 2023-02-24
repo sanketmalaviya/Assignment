@@ -1,0 +1,22 @@
+ 
+
+ Q-1 What is MongoDB.
+
+
+ ANS-  MongoDB is a document database. It stores data in a type of JSON format called BSON.
+       If you are unfamiliar with JSON, check out our JSON tutorial.
+       A record in MongoDB is a document, which is a data structure composed of key value pairs similar to the structure of JSON objects.
+
+  
+ Q2. What is difference between mongo DB and SQl
+
+
+ ANS-  MongoDB :-                                                                         MySQL :-
+      (i) MongoDB is an open-source database developed by MongoDB, Inc.                   (i)MySQL is a popular open-source relational database management system 
+          MongoDB stores data in JSON-like documents that can vary in                        (RDBMS)that is developed, distributed and supported by Oracle Corporation 
+          structure. It is a popular NoSQL database.
+      (ii)Database                                                                        (ii)Database 
+      (iii)Collections                                                                    (iii)Table 
+      (iv) document                                                                       (iv)Row
+      (v)  Field                                                                          (v)Column
+      (vi)  embaded, linking                                                              (vi)Joins
