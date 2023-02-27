@@ -85,6 +85,14 @@ const studentUpdateMany = ()=>{
     })
 }
 
+const studentDataDelete = ()=>{
+    Student.deleteOne({name: "rutvik"}).then(result =>{
+        console.log(result);
+    }).catch(err =>{
+        console.log(err);
+    })
+}
+
 
 
 
@@ -96,4 +104,5 @@ const studentUpdateMany = ()=>{
 // studentMany()
 // studentFind();
 // studentUpdate()
-studentUpdateMany()
+// studentUpdateMany()
+studentDataDelete()
