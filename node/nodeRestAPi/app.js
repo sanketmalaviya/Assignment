@@ -3,15 +3,17 @@ const app = express();
 const port = 9001;
 const mongoose = require("mongoose")
 app.use(express.json())
-const urlDB = "mongodb://127.0.0.1:27017/student"
+const urlDB = "mongodb+srv://sanketmalaviya:project@cluster0.prb08rc.mongodb.net/onlieShopping?retryWrites=true&w=majority"
 mongoose.set('strictQuery', true);
+
+
 mongoose.connect(urlDB).then(() =>{
     console.log("db connected");
 }).catch(err =>{
     console.log(err);
-})
+})     
 
-const userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({ 
     uname:{
         type:String
     },
