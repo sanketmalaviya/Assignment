@@ -11,8 +11,9 @@ mongoose.connect(url_DB).then(()=>{
     console.log("DB connected");
 })
  const userRouter = require("./router/userRouter")
+ const productRouter = require("./router/productRouter")
  app.use("/",userRouter)
-
+ app.use("/",productRouter)
 
 app.listen(port,() =>{
     console.log("server running "+ port );
