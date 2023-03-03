@@ -1,0 +1,18 @@
+app.get("/login",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"login.html"))
+})
+app.get("/home",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"home.html"))
+})
+app.get("/forgot_password",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"forgot_password.html"))
+})
+app.get("/register",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"register.html"))
+})
+app.get("/aboutus",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"aboutus.html"))
+})
+app.get("/contactus",(req,resp)=>{
+    resp.sendFile(path.join(__dirname,"contactus.html"))
+})
