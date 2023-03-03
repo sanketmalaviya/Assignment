@@ -5,6 +5,7 @@ const product = require("../model/Product")
 
 router.get("/users",(req,resp)=>{
     product.find().then(result =>{
+        console.log(result)
         resp.send(result)
     }).catch(err=>{
         resp.send(err)
