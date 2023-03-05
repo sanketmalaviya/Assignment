@@ -17,5 +17,5 @@ app.get("/",(req,resp)=>{
     resp.send("Welcome Web-Page");
 })
 app.get("/clock",(req,resp)=>{
-    resp.render("clock")
+    resp.render("clock ")
 })
