@@ -2,9 +2,10 @@ const express = require("express")
 const router = express.Router()
 const User = require("../model/User")
 const bcrypt = require("bcryptjs")
+const jsonToken = require("jsonwebtoken")
+const auth = require("../middelware/auth")
 
-
-router.get("/user",(req,resp)=>{
+router.get("/user",auth,(req,resp)=>{
     User.find().then(result =>{
         resp.send(result)
     }).catch(err =>{
@@ -42,7 +43,9 @@ router.post("/userlogin", async (req,resp)=>{
         const valid = await bcrypt.compare(pass, userdata.pass)
 
         if (valid) {
-            resp.send("WelCome," + userdata.uname)
+            const token = await jsonToken.sign({_id: userdata._id},"thisismyfirsttoken")
+            resp.send("auth-token :" + token)
+            resp.send("," + userdata.uname)
         }
         else{
            
@@ -53,6 +56,9 @@ router.post("/userlogin", async (req,resp)=>{
         resp.send("404")
      }
 })
+
+
+
 
 
 
