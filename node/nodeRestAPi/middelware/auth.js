@@ -7,7 +7,8 @@ const auth = async (req,resp,next) =>{
     const data = await jsonToken.verify(token,"thisismyfirsttoken")
   
     if (data) {
-        const userdata = await user.findOne({id: data._id})
+        const userdata = await user.findOne({id:data._id})
+        req.user=userdata
          next();
     } else {
         resp.send("Invalid Data")
