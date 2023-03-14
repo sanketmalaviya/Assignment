@@ -4,9 +4,9 @@ const mongoose = require("mongoose")
 require("dotenv").config()
 var bodyParser = require("body-parser")
 const Port = process.env.port   || 9001
-const DB_URL = process.env.DB_URL
+const DB_Url = process.env.DB_URL
 
-mongoose.connect(DB_URL).then(()=>{
+mongoose.connect(DB_Url).then(()=>{
     console.log("DB connected ");
 })
 
