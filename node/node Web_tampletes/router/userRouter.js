@@ -1,10 +1,13 @@
 const express = require("express")
 const router = express.Router()
 const User = require("../model/user")
+const bcrypt = require("bcryptjs")
 router.get("/", (req, resp) => {
     resp.render("registration")
 })
-
+router.get("/login",(req,resp)=>{
+    resp.render("login")
+})
 router.post("/adduser", async (req,resp)=> {
     try {
         const user = new User(req.body)
@@ -13,5 +16,29 @@ router.post("/adduser", async (req,resp)=> {
     } catch (error) {
         
     }
+})
+
+router.post("/userlogin", async (req,resp)=>{
+    try {
+        const useremail = req.body.email
+        const userpass = req.body.pass
+
+        const userdata = await User.findOne({email: useremail})
+        const valid = await bcrypt.compare(userpass,userdata.pass)
+        if (valid) {
+            resp.render("home")
+        }
+        else{
+            resp.render("404 not found")
+        }
+    } catch (error) {
+        resp.render("error")
+    }
+})
+
+
+
+router.get("/home", (req, resp) => {
+    resp.render("home")
 })
 module.exports = router
