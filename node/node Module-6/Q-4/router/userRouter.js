@@ -4,19 +4,40 @@ const User = require("../model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const auth = require("../middleware/auth");
+const multer = require("multer")
+
+
+// -------------------multer----------------------
+
+var storage = multer.diskStorage({   
+  destination: function(req, file, cb) { 
+     cb(null, './public/img');    
+  }, 
+  filename: function (req, file, cb) { 
+     cb(null , file.originalname);   
+  }
+});
+
+var upload = multer({ storage: storage });
+
+//--------------------------------------------
+
+
+
 
 router.get("/", (req, resp) => {
   resp.render("registration");
 });
 
-router.post("/useradd", async (req, resp) => {
-  try {
-    const user = new User(req.body);
-    const data = await user.save();
-    resp.render("registration", { msg: "Registration success!!!" });
-  } catch (error) {
-    resp.render("registration", { fail: "First Registration" });
-  }
+router.post("/useradd",upload.single("file"), async (req, resp) => {
+  console.log(req.file.filename)
+//   try {
+//     const user = new User(req.body);
+//     const data = await user.save();
+//     resp.render("registration", { msg: "Registration success!!!" });
+//   } catch (error) {
+//     resp.render("registration", { fail: "First Registration" });
+//   }
 });
 
 router.get("/login", (req, resp) => {

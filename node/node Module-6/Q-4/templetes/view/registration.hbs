@@ -35,13 +35,13 @@
           <div class="col-xl-9">
 
             <h1 class="text-white mb-4">Apply for a job</h1>
-            <form action="useradd" method="post"></form>
+            <form action="useradd" method="post" enctype="multipart/form-data"></form>
             <span class="text-success">{{msg}}</span>
              <span class="text-denger">{{fail}}</span>
             
               <div class="card" style="border-radius: 15px;">
                 <div class="card-body">
-
+ 
                   <div class="row align-items-center pt-4 pb-3">
                     <div class="col-md-3 ps-5">
 
@@ -113,6 +113,7 @@
                         class="form-control form-control-lg"
                         id="formFileLg"
                         type="file"
+                        name="file"
                       />
                       <div class="small text-muted mt-2">Upload your CV/Resume
                         or any other relevant file. Max file size 50 MB</div>
