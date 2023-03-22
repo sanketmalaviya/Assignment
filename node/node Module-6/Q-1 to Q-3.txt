@@ -1,0 +1,21 @@
+
+
+Q-1:- What is Middleware in Express.js?
+
+ANS:- A request handler with access to the application's request-response cycle is known as middleware. 
+     It's a function that holds the request object, the response object, and the middleware function. 
+     Middleware can also send the response to the server before the request.
+
+Q-2 :- What is json web tokens?
+
+ANS:- JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way  
+      for securely transmitting information between parties as a JSON object. This information can be 
+      verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) 
+      or a public/private key pair using RSA or ECDSA.
+
+
+Q-3:- What is different between encryption and hashing?
+
+ANS:- Encryption is a two-way function; what is encrypted can be decrypted with the proper key. Hashing is the 
+      process of converting a given key into another value. A hash function is used to generate the new value 
+      according to a mathematical algorithm.
