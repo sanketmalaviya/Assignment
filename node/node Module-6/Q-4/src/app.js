@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser')
 
 const mongoose = require("mongoose")
 const DB_URL = process.env.DB_URL
-mongoose.connect(DB_URL).then(()=>{
+mongoose.connect(DB_URL).then(()=>{   
     console.log("DB connected");
 })
 
@@ -28,7 +28,7 @@ app.use(express.static(publicPath))
 
 
 
-app.use("/",require("../router/userRouter"))
+app.use("/",require("../router/userRouter"))  
 
 app.listen(port, () => {
   console.log("Server Running "+ port);
